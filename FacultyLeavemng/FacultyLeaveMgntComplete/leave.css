@@ -1,0 +1,137 @@
+﻿body
+{
+	
+	
+    
+
+    background: url("img1.png") no-repeat center center fixed;
+    background-size: 100% 100%;
+    border-radius: 25px;
+
+
+}
+#heading1
+	{
+		
+		text-align: center;
+		color: Cornsilk ;
+	}
+	
+	#heading1 h1
+{
+	
+	font-size: 27px;
+	//border: 10px  black;
+    	 padding:12px;
+    	 background: CornflowerBlue ;
+	//text-decoration: underline;
+	//background: -webkit-linear-//gradient(#000080,#000080,white);
+
+  	//-webkit-background-clip: text;
+  	//-webkit-text-fill-color: //transparent;
+}
+
+#heading2
+{
+	//text-align: center;
+	font-size: 15px;
+	color: Blue;
+ margin: 1px 190px;
+}
+#heading2 input
+{
+	font-size: 15px;
+	color: Blue;
+ margin: 1px 190px;
+//margin-top: 100px;
+  //  margin-bottom: 100px;
+    //margin-right: 100px;
+    //rgin-left: 100px; 
+}
+#heading3
+{
+	//text-align: center;
+	font-size: 15px;
+	color:MediumBlue;
+ margin: 1px 190px;
+}
+#heading3 input
+{
+	//text-align: center;
+	font-size: 15px;
+	color:MediumBlue;
+ margin: 1px 190px;
+}
+#heading4
+{
+	//text-align: center;
+	font-size: 15px;
+	color:MediumBlue;
+	margin: 1px 190px;
+}
+#heading4 input
+{
+	//text-align: center;
+	font-size: 15px;
+	color:MediumBlue;
+	margin: 1px 190px;
+}
+#heading5
+{
+	//text-align: center;
+	font-size: 15px;
+	color:MediumBlue;
+margin: 1px 190px;
+	
+}
+#heading5 input
+{
+	//text-align: center;
+	font-size: 15px;
+	color:MediumBlue;
+	margin: 1px 190px;
+}
+#heading6
+{
+	//text-align: center;
+	font-size: 15px;
+	color:MediumBlue;
+	margin: 1px 2px;
+	
+}
+#heading6 input
+{
+	//text-align: center;
+	font-size: 15px;
+	color:MediumBlue;
+	margin: 1px 2px;
+}
+
+#heading8
+{
+	text-align: center;
+	font-size: 20px;
+	color:MediumBlue;
+	//margin: 10px 50px;
+	
+}
+#heading8 input
+{
+	text-align: center;
+	font-size: 15px;
+	color:MediumBlue;
+	//margin: 10px 50px;
+}
+#heading9
+{
+	text-align: center;
+	font-size: 18px;
+	color:MediumBlue;
+	
+}
+#heading9 input
+{
+	text-align: center;
+	font-size: 18px;
+	color:MediumBlue;
+}

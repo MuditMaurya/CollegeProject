@@ -1,0 +1,18 @@
+<?php
+
+	session_start();
+	// If the user is not logged in send him/her to the login form
+	if (!isset($_SESSION['uid'])) 
+	{
+	  header("Location: login.php");
+	}
+?>
+<html>
+<head><title>Session Test Home page</title>
+</head>
+<body>
+<p>Hello <?php echo $_SESSION['uid']; ?></p>
+<form name="fl" method="POST" action="logout.php">
+<input type="submit" value="Logout.php">
+<body>
+</html>

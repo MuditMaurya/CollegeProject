@@ -1,0 +1,47 @@
+<?php
+
+	session_start();
+	
+
+
+	$uid = $_POST["ul"];
+	$pass = $_POST["pl"];
+	mysql_connect("localhost","root","toor");
+	//mysql_connect("mpmaurya", "root", "toor")
+	mysql_select_db("Test");
+	$query = "select * from Login where User = '$uid' and PASSWORD='$pass'";
+	$result = mysql_query($query);
+	$no = mysql_num_rows($result);
+	
+	if($no==1)
+	{	
+	  
+	  $_SESSION['uid'] = $uid;
+	  //echo "Welcome,$uid";
+	  //echo "<h1>logged correctly</h1>";
+          header("Location:home.php");
+	 
+	}
+	else {
+	 
+	// If not correct, we set the session to NO
+	  
+	  
+	 // echo "<h1>Not logged correctly</h1>";
+	  header("Location:index.html");
+	 
+	}
+		
+	
+
+	/*if($no==1)
+	{
+		echo "login successful";
+	}
+	else
+	{
+		echo "incorrect password or userid";
+		//header("Location: index.html");
+		echo $query;
+	}*/
+?>

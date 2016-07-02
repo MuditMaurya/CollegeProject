@@ -1,0 +1,23 @@
+
+body  {
+    background-image: url("coverq.png");
+    text-align: center;
+}
+#heading 
+{
+	text-align: left;
+}
+#heading h1
+{
+	font-size: 30px;
+	text-decoration: underline;
+	background: -webkit-linear-gradient( #000080,#000080);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+#form
+	{
+		
+		text-align: right;
+	}
+	

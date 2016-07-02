@@ -1,0 +1,112 @@
+﻿<?php
+session_start();
+	// If the user is not logged in send him/her to the login form
+	if (isset ($_SESSION['uid'])) 
+		{
+			header("Location:home.php");	# code...
+		}
+?>
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css">
+
+			<script language="javascript">
+			function formValidate()
+			{
+				var  unm=document.form.t1;
+				var upwd=document.form.t2;
+				if(name(unm))
+				{
+				}
+				if(pass(upwd,8,10))
+				{
+				}
+			return false;
+			}
+			function name(unm)
+				{
+				var letter=/^[a-zA-Z]+$/;
+				if(unm.value.match(letter))  
+					{  
+						return true;  
+					} 
+				else  
+					{  
+							alert('Username must have alphabets only');  unm.focus();  
+							return false;  
+					}  
+				}
+			function pass(upwd,min,max)
+				{
+				var pass_len=upwd.value.length;
+				if(pass_len==0)
+				{
+					alert('Password should not be empty');	
+				
+					return false;
+					upwd.focus();
+				}
+				else 
+					if(pass_len < min || pass_len > max)
+					{
+						alert('Password should be between '+min+' to '+max);
+			
+						upwd.focus();
+						return false;
+					}
+				else
+				{
+					return true;
+				}
+			
+				}
+
+
+	
+
+			</script>
+	</head>
+	<body>
+		<div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+		</div>
+		<div id="heading">
+			<h1>Faculty Section</h1>
+		</div>
+		<div id="form">
+			<Form name="form" method="POST" action="rftf.php" onSubmit="return formValidate();">
+
+		   UserId:
+
+			<input type="text" name="t1">
+
+			<br><br>Password:
+
+			<input type="password" name="t2">
+			
+			
+
+
+			
+		</div >
+		<div id="form1"><br><br>
+			<input type="submit" value="Login">
+			<input type="submit" value="Signup">
+			<input type="reset">
+		</div>
+		
+
+		
+
+	</body>
+</html>
+</html>
+
